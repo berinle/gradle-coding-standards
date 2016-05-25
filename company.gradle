@@ -1,0 +1,13 @@
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven'
+    apply plugin: 'signing'
+
+    apply plugin: 'application'
+
+    // code checks
+    apply from: "https://raw.githubusercontent.com/berinle/gradle-coding-standards/master/codechecks.gradle"
+
+    //TODO
+    //provide tasks to sign and upload artifacts to Nexus
+}
